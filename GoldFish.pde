@@ -1,11 +1,10 @@
 class GoldFish extends Basic {
   GoldFish() {
-    pos.x = -100;
+    this.name = "GoldFish";
+    pos.x = (int)random(0, width);
     pos.y = (int)random(0, height);
-    
-  }
-
-  void swim() {
-    pos.x -= EnumUtility.GFSPEED;
+    x=EnumUtility.GFSPEED;
+    y=0;
+    bodyColor = #FF0000;
   }
 }

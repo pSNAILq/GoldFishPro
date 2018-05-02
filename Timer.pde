@@ -1,6 +1,7 @@
 class Timer {
 
   private float startTime, endTime;
+  
   void StartTime() {
     startTime = millis();
   }

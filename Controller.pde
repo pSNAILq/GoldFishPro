@@ -1,21 +1,17 @@
 class Controller {
-
-  ArrayList<GoldFish> kingyo= new ArrayList<GoldFish>();
-  ArrayList<Tuetle> kame= new ArrayList<Tuetle>();
-  ArrayList<Echinoidea> uni= new ArrayList<Echinoidea>();
-
+  ObjectController obj_ctrl;
+  Player player;
+  Cup cup;
   Controller() {
+    obj_ctrl = new ObjectController();
+    cup = new Cup();
+    player = new Player();
   }
-
-  void field() {
-    
+  void run() {
+    obj_ctrl.field();
+    cup.run();
+    player.run();
   }
-  
-  
-  void add(){
-   kingyo.add(new GoldFish()); 
-  }
-
 
   void SelectScene() {
   }

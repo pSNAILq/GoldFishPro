@@ -1,8 +1,10 @@
-class Echinoidea {
-  public PVector pos = new PVector(0, 0);
-  int StartTime = 0;
-
-  void swim() {
-
+class Echinoidea extends Basic {
+  Echinoidea() {
+    this.name = "Echinoidea";
+    pos.x = (int)random(-width, width);
+    pos.y = height;
+    x=EnumUtility.UNISPEED;
+    y=EnumUtility.UNISPEED*-1;
+    bodyColor = #000000;
   }
 }
